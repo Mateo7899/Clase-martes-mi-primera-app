@@ -19,10 +19,21 @@ Route::get('/', function () {
 
 
 Route::get('/mi-ruta-app', function () {
-    return ('hola esta es mi ruta');
+
+    echo "<h1> Variables...</h1>";
+    $nombre = "samuel redondo";
+    echo $nombre;
+    $age = 20;
+    echo $age;
+
 });
+
+function printUser(string $name, int $age){
+    return "$name tiene $age años";
+
+}
 
 
 Route::get('/php basico', function () {
-    return ('hola esta es mi ruta');    
+    return ('hola esta es mi ruta');
 });
